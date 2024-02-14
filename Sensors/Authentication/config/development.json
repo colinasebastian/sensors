@@ -1,0 +1,35 @@
+{
+    "server": {
+        "port": "8086"
+    },
+    "credentials": {
+        "permissions": [
+            "/order/read",
+            "/order/write"
+        ]
+    },
+    "signOptions": {
+        "expiresIn": "12h",
+        "algorithm": "RS256"
+    },
+    "mysql": {
+        "user": "root",
+        "password": "secret",
+        "database": "users",
+        "options": {
+            "host": "localhost",
+            "port": "3306",
+            "dialect": "mysql",
+            "pool": {
+                "max": 10,
+                "min": 0,
+                "acquire": 40000,
+                "idle": 10000
+            }
+        }
+    },
+    "bull": {
+        "errorsQueueName": "errorsQueue",
+        "infoQueueName": "infoQueue"
+    }
+}

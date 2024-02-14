@@ -1,0 +1,12 @@
+{
+    "server": {
+        "port": "8085"
+    },
+    "mongo": {
+        "loggerUrl": "mongodb://localhost:27017/loggerDb"
+    },
+    "bull": {
+        "errorsQueueName": "errorsQueue",
+        "infoQueueName": "infoQueue"
+    }
+}

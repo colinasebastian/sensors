@@ -1,0 +1,34 @@
+{
+  "name": "apigateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinasebastian/sensors.git"
+  },
+  "author": "Sebastián Colina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinasebastian/sensors/issues"
+  },
+  "homepage": "https://github.com/colinasebastian/sensors#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bull": "^4.1.1",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "nodemon": "^2.0.14",
+    "uuid": "^8.3.2"
+  }
+}

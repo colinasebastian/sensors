@@ -1,0 +1,172 @@
+[
+    {
+        "esn": "A2S1D231",
+        "model": "W-Sens",
+        "name": "First Sensor",
+        "location": "Prado",
+        "observedProperties": [
+            {
+                "name": "wind",
+                "unit": "km/s",
+                "lowerLimit": 500,
+                "upperLimit": 1200
+            }
+        ]
+    },
+    {
+        "esn": "BA1-1D231",
+        "model": "W-Sens",
+        "name": "Second Sensor",
+        "location": "Centro",
+        "observedProperties": [
+            {
+                "name": "wind",
+                "unit": "km/h",
+                "lowerLimit": 200,
+                "upperLimit": 500
+            }
+        ]
+    },    
+    {
+        "esn": "CA1-1D231",
+        "model": "C-Sens",
+        "name": "third",
+        "location": "Centro",
+        "observedProperties": [
+            {
+                "name": "contamination",
+                "unit": "pm2.5",
+                "lowerLimit": 10,
+                "upperLimit": 50
+            }
+        ]
+    },
+    {
+        "esn": "EE1-1D231",
+        "model": "CJJ-Sens",
+        "name": "fourth",
+        "location": "Minas",
+        "observedProperties": [
+            {
+                "name": "contamination",
+                "unit": "pm2.5",
+                "lowerLimit": 10,
+                "upperLimit": 50
+            },
+            {
+                "name": "temperature",
+                "unit": "celsius",
+                "lowerLimit": 10,
+                "upperLimit": 50
+            }
+        ]
+    },
+    {
+        "esn": "e31-1D231",
+        "model": "CJJ-Sens",
+        "name": "fifth",
+        "location": "Colonia",
+        "observedProperties": [
+            {
+                "name": "contamination",
+                "unit": "pm2.5",
+                "lowerLimit": 10,
+                "upperLimit": 50
+            },
+            {
+                "name": "wind",
+                "unit": "km/h",
+                "lowerLimit": 10,
+                "upperLimit": 600
+            }
+        ]
+    },
+    {
+        "esn": "wwG-e31",
+        "model": "CJJ-Sens",
+        "name": "sixth",
+        "location": "Minas",
+        "observedProperties": [
+            {
+                "name": "wind",
+                "unit": "km/h",
+                "lowerLimit": 100,
+                "upperLimit": 200
+            }
+        ]
+    },
+    {
+        "esn": "AG-11a31",
+        "model": "afdaA11d",
+        "name": "seventh",
+        "location": "Punta",
+        "observedProperties": [
+            {
+                "name": "pressure",
+                "unit": "bar",
+                "lowerLimit": 2,
+                "upperLimit": 15
+            }
+        ]
+    },
+    {
+        "esn": "BBG-1211",
+        "model": "AAddasVB21",
+        "name": "eighth",
+        "location": "Punta",
+        "observedProperties": [
+            {
+                "name": "pressure",
+                "unit": "bar",
+                "lowerLimit": 2,
+                "upperLimit": 15
+            },
+            {
+                "name": "contamination",
+                "unit": "pm2.5",
+                "lowerLimit": 50,
+                "upperLimit": 150
+            }
+        ]
+    },
+    {
+        "esn": "NING-111",
+        "model": "AAdB21",
+        "name": "nine",
+        "location": "Canelones",
+        "observedProperties": [
+            {
+                "name": "pressure",
+                "unit": "bar",
+                "lowerLimit": 1,
+                "upperLimit": 150
+            },
+            {
+                "name": "wind",
+                "unit": "km/h",
+                "lowerLimit": 500,
+                "upperLimit": 150000
+            }
+        ]
+    },
+    {
+        "esn": "DIE-481",
+        "model": "11235-21",
+        "name": "tenthth",
+        "location": "Maldonado",
+        "observedProperties": [
+            {
+                "name": "temperature",
+                "unit": "celsius",
+                "lowerLimit": 11,
+                "upperLimit": 100
+            },
+            {
+                "name": "wind",
+                "unit": "km/h",
+                "lowerLimit": 500,
+                "upperLimit": 150000
+            }
+        ]
+    }
+]

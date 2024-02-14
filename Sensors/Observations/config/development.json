@@ -1,0 +1,21 @@
+{
+    "server": {
+        "port": "8084"
+    },
+    "mongo": {
+        "sensorUrl": "mongodb://localhost:27017/sensorsDataDb"
+    },
+    "bull": {
+        "errorsQueueName": "errorsQueue",
+        "abnormalObservationsQueueName": "abnormalObservationsQueue"
+    },
+    "pipes": {
+        "unitStandardizationName": "filterUnitStandardization",
+        "enqueueAbnormalObservationsName": "filterEnqueueAbnormalObservations",
+        "saveObservationName": "filterSaveObservation",
+        "unitStandardizationProcesses": 1,
+        "enqueueAbnormalObservationsProcesses": 2,
+        "saveObservationProcesses": 2
+    },
+    "validationType": "numericValidation"
+}

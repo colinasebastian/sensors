@@ -1,0 +1,11 @@
+{
+    "server": {
+        "port": "8082"
+    },
+    "mongo": {
+        "sensorUrl": "mongodb://localhost:27017/sensorsDb"
+    },
+    "bull": {
+        "errorsQueueName": "errorsQueue"
+    }
+}

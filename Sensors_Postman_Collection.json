@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "b9b435a3-d408-45ac-8a60-61a7d2d83add",
+		"name": "Post - Sensors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sebacolina4@gmail.com\",\n    \"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8086/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"esn\": \"A2S1D231\",\n    \"model\": \"w-Sens\",\n    \"name\": \"first\",\n    \"location\": \"Prado\",\n    \"observedProperties\": [\n        {\n            \"name\": \"wind\",\n            \"unit\": \"km/s\",\n            \"lowerLimit\": 500,\n            \"upperLimit\": 1200\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YXJpaHNpZWhsdUBnbWFpbC5jb206blBZUDdNY2prY2QzYVF5MUM2cVk=",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"esn\": \"BA1-1D231\",\n        \"model\": \"W-Sens\",\n        \"name\": \"second\",\n        \"location\": \"Centro\",\n        \"observedProperties\": [\n            {\n                \"name\": \"wind\",\n                \"unit\": \"km/h\",\n                \"lowerLimit\": 200,\n                \"upperLimit\": 10000\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"esn\": \"CA1-1D231\",\n        \"model\": \"C-Sens\",\n        \"name\": \"third\",\n        \"location\": \"Centro\",\n        \"observedProperties\": [\n            {\n                \"name\": \"contamination\",\n                \"unit\": \"pm2.5\",\n                \"lowerLimit\": 10,\n                \"upperLimit\": 50\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"esn\": \"EE1-1D231\",\n        \"model\": \"CJJ-Sens\",\n        \"name\": \"fourth\",\n        \"location\": \"Minas\",\n        \"observedProperties\": [\n            {\n                \"name\": \"contamination\",\n                \"unit\": \"pm2.5\",\n                \"lowerLimit\": 10,\n                \"upperLimit\": 50\n            },\n            {\n                \"name\": \"temperature\",\n                \"unit\": \"celsius\",\n                \"lowerLimit\": 10,\n                \"upperLimit\": 50\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"esn\": \"e31-1D231\",\n        \"model\": \"CJJ-Sens\",\n        \"name\": \"fifth\",\n        \"location\": \"Colonia\",\n        \"observedProperties\": [\n            {\n                \"name\": \"contamination\",\n                \"unit\": \"pm2.5\",\n                \"lowerLimit\": 10,\n                \"upperLimit\": 50\n            },\n            {\n                \"name\": \"wind\",\n                \"unit\": \"km/h\",\n                \"lowerLimit\": 10,\n                \"upperLimit\": 600\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 6",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"esn\": \"wwG-e31\",\n        \"model\": \"CJJ-Sens\",\n        \"name\": \"sixth\",\n        \"location\": \"Minas\",\n        \"observedProperties\": [\n            {\n                \"name\": \"wind\",\n                \"unit\": \"km/h\",\n                \"lowerLimit\": 100,\n                \"upperLimit\": 200\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 7",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"esn\": \"AG-11a31\",\n    \"model\": \"afdaA11d\",\n    \"name\": \"seventh\",\n    \"location\": \"Punta\",\n    \"observedProperties\": [\n        {\n            \"name\": \"pressure\",\n            \"unit\": \"bar\",\n            \"lowerLimit\": 2,\n            \"upperLimit\": 15\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"esn\": \"BBG-1211\",\n    \"model\": \"AAddasVB21\",\n    \"name\": \"eighth\",\n    \"location\": \"Punta\",\n    \"observedProperties\": [\n        {\n            \"name\": \"pressure\",\n            \"unit\": \"bar\",\n            \"lowerLimit\": 2,\n            \"upperLimit\": 15\n        },\n        {\n            \"name\": \"contamination\",\n            \"unit\": \"pm2.5\",\n            \"lowerLimit\": 50,\n            \"upperLimit\": 150\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 9",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"esn\": \"NING-111\",\n    \"model\": \"AAdB21\",\n    \"name\": \"nine\",\n    \"location\": \"Canelones\",\n    \"observedProperties\": [\n        {\n            \"name\": \"pressure\",\n            \"unit\": \"bar\",\n            \"lowerLimit\": 1,\n            \"upperLimit\": 150\n        },\n        {\n            \"name\": \"wind\",\n            \"unit\": \"km/h\",\n            \"lowerLimit\": 500,\n            \"upperLimit\": 150000\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensor 10",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaUBnbWFpbC5jb20iLCJ0eXBlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6Ii9vcmRlci9yZWFkLC9vcmRlci93cml0ZSIsImlhdCI6MTYzNzg2NzU2OCwiZXhwIjoxNjM3OTEwNzY4fQ.ZZdf-GD_OQt0iy9KwXq7_Q4zrUaw07Ahoq_F57FOW2hgZrGDhd2uJU16n1p-t6SXlfAT4sPYTrFta3gnVG_4Wt2gOzMAEwsFWKUKlG1zKzO2MPFAwhVtQE_RukTaOvaOjRLpP_TMYD8kkp56gp7Azb24gidWFdn9MXqUXA2_JF0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"esn\": \"DIE-481\",\n    \"model\": \"11235-21\",\n    \"name\": \"tenthth\",\n    \"location\": \"Maldonado\",\n    \"observedProperties\": [\n        {\n            \"name\": \"temperature\",\n            \"unit\": \"celsius\",\n            \"lowerLimit\": 11,\n            \"upperLimit\": 100\n        },\n        {\n            \"name\": \"wind\",\n            \"unit\": \"km/h\",\n            \"lowerLimit\": 500,\n            \"upperLimit\": 150000\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

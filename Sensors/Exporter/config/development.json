@@ -1,0 +1,14 @@
+{
+    "server": {
+        "port": "8083"
+    },
+    "mongo": {
+        "consumerUrl": "mongodb://localhost:27017/consumerDataDb"
+    },
+    "observation": {
+        "URL": "http://localhost:8084"
+    },
+    "bull": {
+        "errorsQueueName": "ErrorsQueue"
+    }
+}

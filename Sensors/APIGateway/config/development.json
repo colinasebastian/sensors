@@ -1,0 +1,44 @@
+{
+    "server": {
+        "port": "8080"
+    },
+    "defer-binding-server": {
+        "server": "http-server"
+    },
+    "analytics": {
+        "URL": "http://localhost:8081"
+    },
+    "catalog": {
+        "URL": "http://localhost:8082"
+    },
+    "observation": {
+        "URL": "http://localhost:8084"
+    },
+    "logger": {
+        "URL": "http://localhost:8085"
+    },
+    "authentication": {
+        "URL": "http://localhost:8086"
+    },
+    "bull": {
+        "errorsQueueName": "errorsQueue",
+        "infoQueueName": "infoQueue"
+    },
+    "usersPermissions": {
+        "analytics": [
+            "admin",
+            "user"
+        ],
+        "catalog": [
+            "admin",
+            "user"
+        ],
+        "logger": [
+            "admin"
+        ],
+        "observations": [
+            "admin",
+            "user"
+        ]
+    }
+}

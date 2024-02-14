@@ -1,0 +1,1 @@
+module.exports.alertList = ['example@gmail.com'];

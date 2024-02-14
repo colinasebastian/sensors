@@ -1,0 +1,32 @@
+{
+  "name": "catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinasebastian/sensors.git"
+  },
+  "author": "Sebastián Colina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinasebastian/sensors/issues"
+  },
+  "homepage": "https://github.com/colinasebastian/sensors#readme",
+  "dependencies": {
+    "bull": "^4.1.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14"
+  }
+}

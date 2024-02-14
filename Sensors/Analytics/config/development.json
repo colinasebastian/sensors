@@ -1,0 +1,17 @@
+{
+    "server": {
+        "port": "8081"
+    },
+    "bull": {
+        "abnormalObservationsQueueName": "abnormalObservationsQueue",
+        "errorsQueueName": "errorsQueue"
+    },
+    "nodeMailer": {
+        "service": "gmail",
+        "user": "sensor.analytics.info@gmail.com",
+        "password": "Sensors2021"
+    },
+    "observation": {
+        "URL": "http://localhost:8084"
+    }
+}
